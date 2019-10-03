@@ -32,7 +32,7 @@
     const handleDetails = function({ target }) {
         const card = getCardParent(target);
         const details = card.querySelector('.details');
-        details.style.display = details.style.display ? '' : 'none';
+        details.style.display = details.style.display ? 'block' : 'none';
     };
 
     [...document.getElementsByClassName('detailsBtn')]

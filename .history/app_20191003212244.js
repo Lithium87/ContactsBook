@@ -17,7 +17,7 @@
 
     document.getElementById('contacts').innerHTML = cardsListFunc({ contacts });
 
-    const getCardParent = (element) => {
+    const getCardTarget = (element) => {
         const className = 'contact';
         let node = element.parentNode;
         while (node !== null) {
@@ -32,7 +32,6 @@
     const handleDetails = function({ target }) {
         const card = getCardParent(target);
         const details = card.querySelector('.details');
-        details.style.display = details.style.display ? '' : 'none';
     };
 
     [...document.getElementsByClassName('detailsBtn')]
